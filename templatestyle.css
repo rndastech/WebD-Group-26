@@ -1,11 +1,32 @@
-
-.c-item {
-  height:auto;
+body, html {
+  height: 100%;
 }
 
-.c-img {
-  height:100vh;
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("car2.jpg");
+
+/* Set a specific height */
+height: 50%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
 ul {
   margin: 0px;
   padding: 0px;
@@ -82,23 +103,23 @@ line-height: 38px;
 border-radius: 50%;
 }
 .facebook-bg{
-  background: #3B5998;
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.linkedin-bg{
+background: #0077b5;
+}
+.instagram-bg{
+  background: #d62976;
   }
-  .twitter-bg{
-  background: #55ACEE;
+  .flickr-bg{
+  background: #0063DC;
   }
-  .linkedin-bg{
-  background: #0077b5;
+  .youtube-bg{
+  background: #FF0000;
   }
-  .instagram-bg{
-    background: #d62976;
-    }
-    .flickr-bg{
-    background: #0063DC;
-    }
-    .youtube-bg{
-    background: #FF0000;
-    }
 .footer-widget-heading h3 {
 color: #fff;
 font-size: 20px;
@@ -116,8 +137,7 @@ width: 50px;
 background: #ff5e14;
 }
 .footer-widget ul li {
-
-float: left;
+float:left;
 width: 50%;
 margin-bottom: 12px;
 }
